@@ -12,4 +12,9 @@ class Author extends Model
         'avatar',
         'bio'
     ];
+
+    public function news()
+    {
+        return $this->hasMany(News::class);
+    }
 }

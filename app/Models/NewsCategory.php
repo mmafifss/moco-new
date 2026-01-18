@@ -10,4 +10,9 @@ class NewsCategory extends Model
         'title',
         'slug'
     ];
+
+    public function news()
+    {
+        return $this->hasMany(News::class);
+    }
 }
